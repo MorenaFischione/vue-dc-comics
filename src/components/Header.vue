@@ -53,8 +53,10 @@ export default {
     @import "../style/variables.scss";
 
     header {
+        width: 70%;
+        margin: 0 auto;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         nav {
             align-self: center;
@@ -80,7 +82,7 @@ export default {
             text-decoration: none;
             color: $primaryColor;
             text-transform: uppercase;
-            font-family: $fontText;
+            font-family: $fontMenu;
             font-weight: 700;
             padding: 10px;
         }
