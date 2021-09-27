@@ -6,35 +6,8 @@
         </a>
         <nav>
             <ul>
-                <li> 
-                    <a href="#">Character</a> 
-                </li>
-                <li> 
-                    <a href="#" class="active">Comics</a> 
-                </li>
-                <li> 
-                    <a href="#">Movies</a> 
-                </li>
-                <li> 
-                    <a href="#">Tv</a> 
-                </li>
-                <li> 
-                    <a href="#">Games</a> 
-                </li>
-                <li> 
-                    <a href="#">Collectibles</a> 
-                </li>
-                <li> 
-                    <a href="#">Videos</a> 
-                </li>
-                <li> 
-                    <a href="#">Fans</a> 
-                </li>
-                <li> 
-                    <a href="#">News</a> 
-                </li>
-                <li> 
-                    <a href="#">Shop</a> 
+                <li v-for="(link, index) in links" :key="index">
+                    <a :class="{ active : link.current}" href="">{{link.text}}</a>
                 </li>
             </ul>
         </nav>
@@ -45,6 +18,68 @@
 
 <script>
 export default {
+    name: "Header",
+    data: function () {
+    return {
+      links: [
+          {
+              text: "Home",
+              url: "#home",
+              current: false,
+          },
+          {
+              text: "Comics",
+              url: "#comics",
+              current: true,
+          },
+          {
+              text: "Movies",
+              url: "#movies",
+              current: false,
+          },
+          {
+              text: "Tv",
+              url: "#tv",
+              current: false,
+          },
+          {
+              text: "Home",
+              url: "#home",
+              current: false,
+          },
+          {
+              text: "Games",
+              url: "#games",
+              current: false,
+          },
+          {
+              text: "Collectibles",
+              url: "#collectibles",
+              current: false,
+          },
+          {
+              text: "Video",
+              url: "#video",
+              current: false,
+          },
+          {
+              text: "Fans",
+              url: "#fans",
+              current: false,
+          },
+          {
+              text: "News",
+              url: "#news",
+              current: false,
+          },
+          {
+              text: "Shop",
+              url: "#shop",
+              current: false,
+          },
+      ]
+    }
+  },
 
 }
 </script>

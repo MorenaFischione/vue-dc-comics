@@ -156,7 +156,8 @@ export default {
             }
 
             h3 {
-                margin-bottom: 20px;
+                margin-top:15px;
+                margin-bottom: 5px;
                 color: $secondaryColor;
             }
 
@@ -172,6 +173,5 @@ export default {
         background-color: black;
         position: absolute;
         width: 100%;
-        bottom: 1px;
     }
 </style>
