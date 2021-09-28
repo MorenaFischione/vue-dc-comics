@@ -144,13 +144,20 @@ main {
 
         .card {
             flex-basis: calc(100% / 6 - 30px);
-            margin: 5px;
+            margin: 20px 5px ;
 
             img {
                 width: 100%;
                 height: 60%;
                 object-fit: cover;
                 object-position: top;
+            }
+
+            h5 {
+                font-size: .9rem;
+                color:$secondaryColor;
+                text-transform: uppercase;
+                padding-top: 10px;
             }
             
         }
